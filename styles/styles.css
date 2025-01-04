@@ -46,11 +46,12 @@ button{
     .recuadro{
         padding: 0.8rem;
         height: 100%;
-        width: 100vw;
+        width: 100%;
         grid-column: 1/5;
         grid-row: 1/5;
     }
     .letras{
+        width: 100%;
         padding: 1.2rem;
         margin-top: 8rem;
         grid-column: 1/5;
