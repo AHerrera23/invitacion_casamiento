@@ -168,4 +168,32 @@ button{
         text-align: center;
         gap: 1rem;
     }
+    /* seccion 4 */
+    .container-4{
+        height: 50vh;
+        grid-template-columns: repeat(4,1fr);
+        grid-template-rows: repeat(4,1fr);
+    }
+    .tituloS4{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        grid-column: 1/3;
+        grid-row: 1/3;
+    }
+    .dress .code{
+        margin: 0;
+    }
+    .tituloS4 .code{
+        padding-left: 10rem;
+    }
+    .contenidoS4{
+        grid-row: 3/4;
+        grid-column: 2/5;
+    }
+    .contenidoS4 h3{
+        padding-left: 6rem;
+        font-size: 3rem;
+    }
 }
