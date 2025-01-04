@@ -23,7 +23,7 @@ h3{
     color: rgb(52, 52, 52);
 }
 h4{
-    font-size: 1.8rem;
+    font-size: 1.7rem;
     font-weight:200;
     color: rgb(52, 52, 52);
 }
@@ -143,7 +143,7 @@ button{
     }
     /* seccion 3 */
     .container-3{
-        height: 40vh;
+        height: 50vh;
         display: grid;
         grid-template-columns: repeat(4,1fr);
         grid-template-rows: repeat(4,1fr);
