@@ -35,7 +35,8 @@ button{
 .mobile{
     display: none;
 }
-@media only screen and (max-width: 800px){
+@media only screen and (max-width: 700px ){
+
     .mobile{
         display: grid;
     }
@@ -54,11 +55,12 @@ button{
         grid-row: 1/5;
     }
     .letras{
+        height: 100%;
         width: 100%;
         padding: 1.2rem;
         margin-top: 8rem;
         grid-column: 1/5;
-        grid-row: 1/5;
+        grid-row: 1/4;
     }
     .recuadroDer{
         grid-column: 4/5;
