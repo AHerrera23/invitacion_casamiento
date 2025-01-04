@@ -37,7 +37,7 @@ button{
         display: grid;
     }
     .container{
-        height: 95vh;
+        height: 93vh;
         width: 100vw;
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -70,7 +70,7 @@ button{
     }
     /* contenedor 2 */
     .container-2{
-        height: 70vh;
+        height: 80vh;
         width: 100vw;
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -97,13 +97,13 @@ button{
         flex-direction: row;
         grid-column: 1/5;
         grid-row: 2/5 ;
-        gap:1rem;
+        gap:1.5rem;
         padding-right: 1.4rem;
         justify-content: center;
         align-items: center;
     }
     .contenido img{
-        height: 60%;
+        height: 40%;
     }
     .fecha{
         text-align: center;
