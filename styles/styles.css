@@ -189,11 +189,12 @@ button{
         padding-left: 10rem;
     }
     .contenidoS4{
+        text-align: right;
         grid-row: 3/4;
-        grid-column: 2/5;
+        grid-column: 1/5;
     }
     .contenidoS4 h3{
-        padding-left: 6rem;
         font-size: 3rem;
+        padding: 0.5rem;
     }
 }
