@@ -95,20 +95,22 @@ button{
         flex-direction: column;
         text-align: center;
         grid-column: 1/5;
-        grid-row: 1/3;
+        grid-row: 1/2;
     }
     .contenido{
         display: flex;
         flex-direction: row;
+        height: 100%;
         grid-column: 1/5;
-        grid-row: 2/5 ;
+        grid-row: 2/4 ;
         gap:1.5rem;
         padding-right: 1.4rem;
+        padding-top: 0.5rem;
         justify-content: center;
         align-items: center;
     }
     .contenido img{
-        height: 40%;
+        height: 100%;
     }
     .fecha{
         text-align: center;
@@ -119,7 +121,8 @@ button{
     .flechahorizontalC2{
         grid-row: 4/5;
         grid-column: 1/3;
-        margin-top: 7rem;
+        width: 100%;
+        margin-top: 2rem;
         transform: rotate(180deg);
     }
 }
