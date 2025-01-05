@@ -25,3 +25,13 @@ function moveSlide(direccion){
     const offset = -currentIndex * 100
     document.querySelector('.carrucel-inner').style.transform =  `translateX(${offset}%)`
 }
+
+// funcion boton album de fotos
+
+let btnFotos = document.getElementById('btnFotos')
+
+btnFotos.addEventListener('click', () => {
+    console.log('esta funcionando el boton')
+    const url = 'https://photos.google.com/u/0/album/AF1QipORhogFb3rpT5Y_KxdmNbZ7Fol7VNFGFVmp9W7F?hl=es'
+    window.open(url, '_blank')
+})
