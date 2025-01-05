@@ -197,4 +197,52 @@ button{
         font-size: 3rem;
         padding: 0.5rem;
     }
+    /* seccion 5 */
+    .container-5{
+        height: 50vh;
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        grid-template-rows: repeat(4,1fr);
+    }
+    .tituloS5{
+        grid-column: 1/5;
+        grid-row: 1/2;
+    }
+    /* estilus del carrucel  */
+    .carrucel{
+        grid-column: 1/5;
+        grid-row: 2/5;
+        height: 100%;
+        position: relative;
+        width: 100%;
+        overflow: hidden;
+        border-radius: 10px;
+    }
+    .carrucel-inner{
+        display: flex;
+        transition: transform 0.5s ease-in-out;
+        width: 100%;
+    }
+    .carrucel-inner img{
+        width: 100%;
+    }
+    /* estilos del boton */
+    .btnCarrucel{
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        background-color: rgba(0, 0, 0, 0.5);
+        border: none;
+        color: white;
+        font-size: 1.5rem;
+        padding: 0.5rem;
+        cursor: pointer;
+    }
+    .prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
 }
