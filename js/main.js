@@ -35,3 +35,11 @@ btnFotos.addEventListener('click', () => {
     const url = 'https://photos.google.com/u/0/album/AF1QipORhogFb3rpT5Y_KxdmNbZ7Fol7VNFGFVmp9W7F?hl=es'
     window.open(url, '_blank')
 })
+// funcion para playlist 
+
+let btnPlaylist = document.getElementById('playlist')
+
+btnPlaylist.addEventListener('click',()=>{
+    const url = 'https://open.spotify.com/playlist/49wIsdpDqPU8RJFirdMC4L?si=f61f362822b7495b&pt=7ca3a833f9164921eb8369c7bc52fa21'
+    window.open(url, '_blank')
+})
