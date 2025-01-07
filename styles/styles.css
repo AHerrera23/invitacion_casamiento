@@ -14,7 +14,7 @@ body, html {
     overflow-x: hidden;
 }
 h2{
-    font-size: 3rem;
+    font-size: 2.2rem;
     font-weight: 600;
 }
 h3{
@@ -23,18 +23,18 @@ h3{
     color: rgb(52, 52, 52);
 }
 h4{
-    font-size: 1.7rem;
+    font-size: 1.5rem;
     font-weight:200;
     color: rgb(52, 52, 52);
 }
 p{
-    font-size: 1.5rem;
+    font-size: 1rem;
     font-weight: 400;
     color: rgb(52, 52, 52);
 }
 button{
     font-family: 'Playfair Display', serif;
-    font-size: 1.3rem;
+    font-size: 1rem;
     font-weight: 400;
 }
 .mobile{
@@ -144,14 +144,12 @@ button{
     }
     /* seccion 3 */
     .container-3{
-        height: 45vh;
+        height: 40vh;
         display: grid;
         grid-template-columns: repeat(4,1fr);
-        grid-template-rows: repeat(4,1fr);
+        grid-template-rows: repeat(3,1fr);
         text-align: center;
-        justify-content: center;
-        margin-bottom: 1rem;
-
+        margin-bottom: 3rem;
     }
     .marcoTituloS3{
         grid-column: 1/5;
@@ -160,11 +158,11 @@ button{
     .tituloS3{
         margin-top: 3rem;
         grid-column: 1/5;
-        grid-row: 1/2;
+        grid-row: 1/3;
     }
     .contenidoS3{
         grid-column: 1/5;
-        grid-row: 3/5;
+        grid-row: 3/3;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -173,16 +171,14 @@ button{
     }
     /* seccion 4 */
     .container-4{
-        height: 50vh;
+        height: 25vh;
         grid-template-columns: repeat(4,1fr);
         grid-template-rows: repeat(4,1fr);
-        margin-bottom: 1rem;
-
     }
     .tituloS4{
         display: flex;
         flex-direction: column;
-        align-items: center;
+        padding-left: 1rem;
         justify-content: center;
         grid-column: 1/3;
         grid-row: 1/3;
@@ -191,15 +187,14 @@ button{
         margin: 0;
     }
     .tituloS4 .code{
-        padding-left: 10rem;
+        padding-left: 5rem;
     }
     .contenidoS4{
         text-align: right;
         grid-row: 3/4;
-        grid-column: 1/5;
+        grid-column: 3/5;
     }
     .contenidoS4 h3{
-        font-size: 3rem;
         padding: 0.5rem;
     }
     /* seccion 5 */
@@ -292,7 +287,7 @@ button{
         grid-column: 1/5;
         grid-row: 1/3;
         height: 85%;
-        width: 99%;
+        width:100%;
     }
     .tituloS7{
         display: flex;
@@ -317,19 +312,18 @@ button{
     .parrafoS7{
         text-align: center;
         padding-top: 2rem;
+        margin-right: 1rem;
+        margin-left: 2rem;
         grid-row: 1/1;
         grid-column: 1/5;
-        font-size: 1rem;
     }
     .parrafo1{
         text-align: left;
-        font-size: 1.2rem;
         padding-left: 1rem;
         padding-right: 4rem;
     }
     .parrafo2{
         text-align: right;
-        font-size: 1.2rem;
         padding-right: 1rem;
         padding-left: 4rem;
     }
