@@ -48,7 +48,7 @@ btnPlaylist.addEventListener('click',()=>{
 let popup = document.getElementById('popup')
 let btnAbrir = document.getElementById('cbu')
 let btnCerrar = document.getElementById('btnCopiar')
-let abierto = false
+const valorCbu = document.getElementById('valorCbu').innerText
 
 btnAbrir.addEventListener("click",()=>{
     console.log('btn cbu funcionndo')  
@@ -59,6 +59,8 @@ btnAbrir.addEventListener("click",()=>{
 
 btnCerrar.addEventListener("click",()=>{
     console.log('btn cerrar funciona') 
+    navigator.clipboard.writeText(valorCbu)
+    alert('Copiaste el cbu con exito 🎁❤')
     popup.classList.remove('mostrar')
     popup.classList.add('esconder')
     setTimeout(() => {
