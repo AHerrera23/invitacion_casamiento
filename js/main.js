@@ -43,3 +43,35 @@ btnPlaylist.addEventListener('click',()=>{
     const url = 'https://open.spotify.com/playlist/49wIsdpDqPU8RJFirdMC4L?si=f61f362822b7495b&pt=7ca3a833f9164921eb8369c7bc52fa21'
     window.open(url, '_blank')
 })
+
+// funcion pop up de cbu
+let popup = document.getElementById('popup')
+let btnAbrir = document.getElementById('cbu')
+let btnCerrar = document.getElementById('btnCopiar')
+let abierto = false
+
+btnAbrir.addEventListener("click",()=>{
+    console.log('btn cbu funcionndo')  
+    popup.classList.remove('esconder')
+    popup.classList.add('mostrar')
+    abierto = true
+})
+
+btnCerrar.addEventListener("click",()=>{
+    console.log('btn cerrar funciona') 
+    popup.classList.remove('mostrar')
+    popup.classList.add('esconder')
+    setTimeout(() => {
+        popup.classList.add('esconder')
+    }, 500)
+})
+
+document.addEventListener('click', (event) => {
+    if (!popup.contains(event.target) && !btnAbrir.contains(event.target)) {
+        popup.classList.remove('mostrar');
+        popup.classList.add('esconder');
+        setTimeout(() => {
+          popup.classList.add('esconder');
+        }, 500);
+    }
+  });

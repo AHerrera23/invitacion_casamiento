@@ -360,4 +360,56 @@ button{
     .cbu p{
         font-size: 1rem;
     }
+    /* propiedades del popup */
+    .popup{
+        position: fixed;
+        top: 30%;
+        left: 15%;
+        width: 70%;
+        height: 30%;
+        background-color:#87adbc;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        pointer-events: none;
+        opacity: 0;
+        transition: opacity 0.5s ease;
+        border-radius: 15%;
+    }
+    .contenido-popup{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+        animation: slideIn 0.5 ease;
+    }
+    .popup.mostrar{
+        opacity: 1;
+        pointer-events: all;
+    }
+    .popup.esconder{
+        opacity: 0;
+    }
+    .btnPopUp{
+        background-color: white;
+    }
+    /* animacion del popup */
+    @keyframes slideIn {
+        from{
+            transform: translateY(-50px);
+        }
+        to{
+            transform: translateY(0);
+        }
+    }
+    @keyframes slideOut{
+        from{
+            transform: translateY(0);
+            transform: translate(-50px);
+        }
+    }
+    .hidden{
+        display: none;
+    }
 }
