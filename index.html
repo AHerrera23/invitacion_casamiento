@@ -112,6 +112,30 @@
             </div>
         </div>
     </div>
+    <div class="container-9 mobile">
+        <img class="recuadroFondo" src="images/recuadro-Form.png" alt="recuadro de fondo">
+        <div class="contenidoS9">
+            <p>"Estamos felices de que seas parte de este día."</p>
+            <h2>CONFIRMACIÓN<br>DE ASISTENCIA</h2>
+            <p>Completa este formulario para<br>confirmar tu asistencia a nuestra fiesta.</p>
+        </div>
+        <form class="formulario">
+            <p>Ingresa tu nombre y apellido</p>
+            <input id="name" class="inputName" type="text" autocomplete="cc-name" placeholder="Juanito perez" required>
+            <div class="checkbox">
+                <label for="opcion1">
+                    <input type="radio" id="opcion1" name="confirmacion" value="Confirmo mi asistencia a su casamiento!." required>
+                    Puedo asistir
+                </label>
+                <label for="opcion2">
+                    <input type="radio" id="opcion2" name="confirmacion" value="
+                    No puedo asistir a su casamiento." required>
+                    no puedo asistir
+                </label>
+            </div>
+            <button id="btnForm" class="btn btnForm" type="submit">Enviar</button>
+        </form>
+    </div>
     <!-- link a js  -->
     <script src="js/main.js"></script>
 </body>

@@ -77,3 +77,27 @@ document.addEventListener('click', (event) => {
         }, 500);
     }
   });
+
+//   funciones del formulario
+
+let btnForm = document.getElementById('btnForm')
+
+btnForm.addEventListener('click', () => {
+    const name = document.getElementById('name').value
+    const chek1 = document.getElementById('opcion1')
+    const chek2 = document.getElementById('opcion2')
+    let mensaje = ''
+    if(chek1.checked){
+        mensaje= `Hola Anto y Martin! ${chek1.value}`
+        console.log(mensaje)
+    }
+    else if(chek2.checked){
+        mensaje=`Hola Anto y Martin! ${chek2.value} ¡que sea una linda noche!`
+        console.log(mensaje)
+    }
+    const telefono = 5491150522026;
+    const url = `https://wa.me/${telefono}?text=${mensaje}`;
+    // generacion dinamica del mensaje
+    window.open(url, '_blank');
+    
+})
