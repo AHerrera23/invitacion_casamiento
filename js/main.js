@@ -95,7 +95,7 @@ btnForm.addEventListener('click', () => {
         mensaje=`Hola Anto y Martin! ${chek2.value} ¡que sea una linda noche!`
         console.log(mensaje)
     }
-    const telefono = 5491150522026;
+    const telefono = 5492213526596;
     const url = `https://wa.me/${telefono}?text=${mensaje}`;
     // generacion dinamica del mensaje
     window.open(url, '_blank');
