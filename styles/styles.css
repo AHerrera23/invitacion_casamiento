@@ -7,7 +7,7 @@
 body{
     background-color: rgb(255, 255, 255);
     /* aca metemos la tipografia */
-    font-family: 'Playfair Display', serif ;
+    font-family: "Inria Serif", serif;
     font-size: 16px;
 }
 body, html {
@@ -499,7 +499,7 @@ footer{
         margin-top: 1rem;
     }
     .container-10{
-        height: 70vh;
+        height: 80vh;
         display: grid;
         grid-template-columns: repeat(4,1fr);
         grid-template-rows: repeat(6,1fr);
