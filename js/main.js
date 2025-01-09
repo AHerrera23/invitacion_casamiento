@@ -32,7 +32,7 @@ let btnFotos = document.getElementById('btnFotos')
 
 btnFotos.addEventListener('click', () => {
     console.log('esta funcionando el boton')
-    const url = 'https://photos.google.com/u/0/album/AF1QipORhogFb3rpT5Y_KxdmNbZ7Fol7VNFGFVmp9W7F?hl=es'
+    const url = 'https://drive.google.com/drive/folders/14NhXtZLPZ5Toe47hVXQImE6gUKRpuV-I'
     window.open(url, '_blank')
 })
 // funcion para playlist 
@@ -101,3 +101,47 @@ btnForm.addEventListener('click', () => {
     window.open(url, '_blank');
     
 })
+
+
+// Función de contador
+function actualizarContador() {
+    const fechaFinal = new Date('2025-02-15T20:00:00Z')
+    const now = new Date()
+    const tiempoRestante = fechaFinal - now
+
+    const dias = Math.floor(tiempoRestante / (1000 * 60 * 60 * 24))
+    const horas = Math.floor((tiempoRestante % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60))
+    const minutos = Math.floor((tiempoRestante % (1000 * 60 * 60)) / (1000 * 60))
+    const segundos = Math.floor((tiempoRestante % (1000 * 60)) / 1000)
+
+    const diasQueFaltan = document.getElementById('dia')
+    const horasQueFaltan = document.getElementById('horas')
+    const minutosQueFaltan = document.getElementById('minutos')
+    const segundosQueFaltan = document.getElementById('segundos')
+    const faltan = document.getElementById('falta')
+
+    const contador = document.getElementById('contador');
+    const llego = document.getElementById('llego')  
+
+    // Actualiza los elementos HTML
+    diasQueFaltan.innerHTML = dias
+    horasQueFaltan.innerHTML = horas
+    minutosQueFaltan.innerHTML = minutos
+    segundosQueFaltan.innerHTML = segundos
+
+    // console.log('faltan ' + dias + ' días' + ', ' + horas + ' horas' + ' y ' + minutos + ' minutos')
+    if(dias==0){
+        contador.style.display = 'none'
+        faltan.style.display = 'none'
+        llego.style.display = 'flex'
+    }else{
+        contador.style.display = 'flex'
+        faltan.style.display = 'flex'
+        llego.style.display = 'none'
+    }
+}
+// Llamar a la función de contador inmediatamente
+actualizarContador()
+
+// Configurar el intervalo para actualizar el contador cada segundo
+const intervalo = setInterval(actualizarContador, 1000);
