@@ -474,7 +474,7 @@ input{
         margin-top: 1rem;
     }
     .container-10{
-        height: 70vh;
+        height: 60vh;
         display: grid;
         grid-template-columns: repeat(4,1fr);
         grid-template-rows: repeat(6,1fr);
@@ -488,6 +488,10 @@ input{
         gap: 1rem;
         grid-column: 1/5;
         grid-row: 1/2;
+    }
+    .anillos{
+        width: 20%;
+        height: 20%;
     }
     .flechaIzquierda{
         display: flex;
