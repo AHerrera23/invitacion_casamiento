@@ -60,7 +60,7 @@ btnAbrir.addEventListener("click",()=>{
 btnCerrar.addEventListener("click",()=>{
     console.log('btn cerrar funciona') 
     navigator.clipboard.writeText(valorCbu)
-    alert('Copiaste el cbu con exito 🎁❤')
+    alert('Copiaste el alias con exito 🎁❤')
     popup.classList.remove('mostrar')
     popup.classList.add('esconder')
     setTimeout(() => {
