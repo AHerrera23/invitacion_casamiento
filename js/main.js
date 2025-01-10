@@ -88,14 +88,14 @@ btnForm.addEventListener('click', () => {
     const chek2 = document.getElementById('opcion2')
     let mensaje = ''
     if(chek1.checked){
-        mensaje= `Hola Anto y Martin! ${chek1.value}`
+        mensaje= `Hola Anto y Martin!${chek1.value}`
         console.log(mensaje)
     }
     else if(chek2.checked){
-        mensaje=`Hola Anto y Martin! ${chek2.value} ¡que sea una linda noche!`
+        mensaje=`Hola Anto y Martin!${chek2.value}¡que sea una linda noche!`
         console.log(mensaje)
     }
-    const telefono = 5492213526596;
+    const telefono = 5492215560389;
     const url = `https://wa.me/${telefono}?text=${mensaje}`;
     // generacion dinamica del mensaje
     window.open(url, '_blank');
