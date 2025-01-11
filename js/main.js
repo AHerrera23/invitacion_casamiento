@@ -40,7 +40,7 @@ btnFotos.addEventListener('click', () => {
 let btnPlaylist = document.getElementById('playlist')
 
 btnPlaylist.addEventListener('click',()=>{
-    const url = 'https://open.spotify.com/playlist/49wIsdpDqPU8RJFirdMC4L?si=f61f362822b7495b&pt=7ca3a833f9164921eb8369c7bc52fa21'
+    const url = 'https://open.spotify.com/playlist/5QUT1682cnxzLelpJ46wuf?si=UaU3l9MhQ3mqmCD4_5EINQ&pt=5fa4ef992e6a06c965f3f3f561e5513c&pi=jBu8IwKaQVqAG'
     window.open(url, '_blank')
 })
 
