@@ -40,7 +40,7 @@ btnFotos.addEventListener('click', () => {
 let btnPlaylist = document.getElementById('playlist')
 
 btnPlaylist.addEventListener('click',()=>{
-    const url = 'https://open.spotify.com/playlist/5QUT1682cnxzLelpJ46wuf?si=UaU3l9MhQ3mqmCD4_5EINQ&pt=5fa4ef992e6a06c965f3f3f561e5513c&pi=jBu8IwKaQVqAG'
+    const url = 'https://open.spotify.com/playlist/5QUT1682cnxzLelpJ46wuf?si=hXSh_ed5TqGWYzwnVe8BaQ&pt=2f3f8433838e325abb32eba09a75fc3d&pi=jIIZZNvzS5qcX'
     window.open(url, '_blank')
 })
 
@@ -145,3 +145,4 @@ actualizarContador()
 
 // Configurar el intervalo para actualizar el contador cada segundo
 const intervalo = setInterval(actualizarContador, 1000);
+
